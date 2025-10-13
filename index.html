@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Mohammed Nayeem N</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h2 class="logo">Welcome To My Portfolio</h2>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span class="highlight">Mohammed Nayeem N</span></h1>
+      <h2>I’m a <span class="typing-text"></span></h2>
+      <p>Welcome to my portfolio! Scroll down to explore more 🚀</p>
+    </div>
+    
+    <div class="hero-photo">
+      <img src="proffesional pic.jpg" alt="My Photo" class="profile-pic">
+    </div>
+    <div class="social-links-overlay">
+        <a href="mailto:your.email@gmail.com" target="_blank" title="Gmail">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/mohammed-nayeem-n-80b6302a4/" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a id="contact-link" href="" title="Phone">
+          <i class="fas fa-phone"></i>
+        </a>
+        <script>
+      const contactLink = document.getElementById("contact-link");
+  const phoneNumber = "+916374845630"; // 🔹 Replace with your number (include country code)
+
+  function isMobileDevice() {
+    return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  }
+
+  if (isMobileDevice()) {
+    // 📱 Mobile → Open phone dialer
+    contactLink.href = `tel:${phoneNumber}`;
+  } else {
+    // 💻 Desktop → Open WhatsApp Web
+    contactLink.href = `https://wa.me/${phoneNumber}`;
+    contactLink.target = "_blank";
+  }
+    </script>
+            
+        
+         <a href="https://github.com/" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+    
+  </section>
+
+  <section class="home-intro">
+    <h2>Welcome 👋</h2>
+    <p>
+      I'm <b>Mohammed Nayeem N</b>, a <b>Full Stack Developer</b> passionate about building  
+      <b>modern, interactive, and scalable web applications</b>.  
+    </p>
+    <p>
+      On this portfolio, you’ll find my <b>skills</b>, <b>projects</b>, and a glimpse of my developer journey.  
+      Let’s create something awesome together 🚀
+    </p>
+  </section>
+
+  <div class="scroll-container">
+    <div class="scroll-text">Scroll Down</div>
+    <div class="scroll-arrow">⬇</div>
+    <a href="projects.html" class="see-more">See More</a>
+  </div>
+
+  <footer>
+    <p>© 2025 Mohammed Nayeem N | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
